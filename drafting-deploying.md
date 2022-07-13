@@ -4,7 +4,7 @@
 
 You need to install the Khronus Utils
 
-- If you are using [Brownie Eth](https://eth-brownie.readthedocs.io/en/stable/) or other not JS based frameworks, it is recommended that you install the utilities directly from the [github repository](https://github.com/Khronus-Project/Khronus_utils)  
+- If you are using [Brownie Eth](https://eth-brownie.readthedocs.io/en/stable/) or other not JS based frameworks, it is recommended that you install the utilities directly from the [github repository.](https://github.com/Khronus-Project/Khronus_utils)  
 - In JS based frameworks or Remix you can utilize NPM style imports (see below), this will import the utilities directly from NPM [https://www.npmjs.com/package/@khronus/khronus-utils](https://www.npmjs.com/package/@khronus/khronus-utils) without needing to install the utilities directly.
 
 Importing the client base:
@@ -67,7 +67,7 @@ function khronResponse(bytes32 _requestID) external returns (bool){
     - This function only registers the alert in the network, it doesn't define what happens upon expiration.
     - The function returns the RequestId as a bytes32 hexadecimal value.
 
-- Example: The following function creates a Khronus powered escrow that expires in the selected timestamp.
+Example: The following function creates a Khronus powered escrow that expires in the selected timestamp.
 
 ```
 function openEscrow(address _beneficiary, uint256 _expiryTimestamp, address _agent) external payable returns (bytes32){
@@ -93,7 +93,7 @@ function openEscrow(address _beneficiary, uint256 _expiryTimestamp, address _age
 
 - This function is originally empty in the contract base, you need to override it with the logic you want to implement upon the expiration of the alerts. This logic of this function is up to you, but the function is internal it can only be triggered by the khronResponse external function, which only can be called by the Khronus Protocol.
 
-- Example: The following function is the counterpart to the create alert function above, this function actually expires the escrow and transfers the escrow funds according to the escrow rules. 
+Example: The following function is the counterpart to the create alert function above, this function actually expires the escrow and transfers the escrow funds according to the escrow rules. 
 
 ```
 function khronProcessAlert(bytes32 _requestID) override internal returns (bool){
