@@ -1,4 +1,4 @@
-# Drafting and Deploying Khronus Client Contract
+# Drafting and Deploying a Khronus Client Contract
 
 ## Drafting your Client Contract:
 
