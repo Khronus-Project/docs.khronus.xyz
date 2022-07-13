@@ -17,7 +17,7 @@ The [Khronus Dapp](dapp.khronus.xyz) requires:
 
 ### Registering Your Contracts
 
-After connecting you will see the dapp with the following sections.
+After connecting you will see the dapp with the following sections:
 
 - Your Account
 - Your Contracts
@@ -25,16 +25,16 @@ After connecting you will see the dapp with the following sections.
 
 ![Connected Dapp](./images/SectionsDapp.png)
 
-In the your contracts sections you can see a + sign button, clicking on this button will open the contract registration dialogue.
+In the Contracts section you can see a (+) button as the heading of the last column, clicking on this button will open the contract registration dialogue.
 
-![Register](./images/RegisterDialog.png)
+![Register](./images/RegisterDialog.png){ width=50% height=50% }
 
-In this Dialogue you can define a name for your Dapp, this is a nickname, it only exist in Khronus Frontend for your convenience. Also, and more importantly, you define the the contract address. Your contrack should have been deployed following the instructions [here.](./drafting-deploying){:target="_blank"} 
+In this Dialogue you can define a name for your Dapp, this is a nickname, it only exist in Khronus Frontend for your convenience. Also, and more importantly, you define the the contract address. Your contract should have been deployed following the instructions [here.](./drafting-deploying){:target="_blank"} 
 
-Upon clicking Register! your account will transfer the registration deposit, in Mumbai Testnet tokens, to the Khronus Coordinator contract. Your alerts are paid from the balance of your client contract in the coordinator. If the contract has no funds your alerts will not go through. This because gas and a markup to the node operators paid for each alert served.
+Upon clicking Register! your account will transfer the registration deposit, in Mumbai Testnet tokens, to the Khronus Coordinator contract. Your alerts are paid from the balance of your client contract in the coordinator. If the contract has no funds your alerts will not go through. This because gas and a markup to the node operators are paid for each alert served.
 
-If your contract balance in the protocol is close to be depleted, you can click in the Details button next to each of the contract to fund the specific contract with more Mumbai Testnet Tokens.
+If your contract balance in the protocol is close to be depleted, you can click in the Details button, last column in each of the contracts, to fund the specific contract with more Mumbai Testnet Tokens.
 
-![TopUpDialog](./images/RegisterDialog.png)
+![TopUpDialog](./images/RegisterDialog.png){ width=50% height=50% }
 
 
