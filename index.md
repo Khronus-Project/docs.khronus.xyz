@@ -39,7 +39,7 @@ Periodic alerts at different timeframes will be available soon to power decentra
 
 During the alpha version all scheduler servers (Khronus Nodes) are operated by the Khronus Project, in the near future the protocol might receive request for joining as an scheduler server operator.
 
-Getting Started 
+Getting Started! [>](./register)
 
 
 

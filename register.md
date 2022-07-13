@@ -21,13 +21,13 @@ After connecting you will see the dapp with the following sections:
 
 - Your Account
 - Your Contracts
-- Your Alerts
+- Served Alerts
 
 ![Connected Dapp](./images/SectionsDapp.png)
 
 In the Contracts section you can see a (+) button as the heading of the last column, clicking on this button will open the contract registration dialogue.
 
-![Register](./images/RegisterDialog.png){ width=50% height=50% }
+![Register](./images/RegisterDialog.png)
 
 In this Dialogue you can define a name for your Dapp, this is a nickname, it only exist in Khronus Frontend for your convenience. Also, and more importantly, you define the the contract address. Your contract should have been deployed following the instructions [here.](./drafting-deploying){:target="_blank"} 
 
@@ -35,6 +35,6 @@ Upon clicking Register! your account will transfer the registration deposit, in 
 
 If your contract balance in the protocol is close to be depleted, you can click in the Details button, last column in each of the contracts, to fund the specific contract with more Mumbai Testnet Tokens.
 
-![TopUpDialog](./images/RegisterDialog.png){ width=50% height=50% }
+![TopUpDialog](./images/RegisterDialog.png)
 
-
+Previous![<](./drafting-deploying) Next![>](./monitor)
