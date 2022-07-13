@@ -37,4 +37,4 @@ If your contract balance in the protocol is close to be depleted, you can click 
 
 ![TopUpDialog](./images/RegisterDialog.png)
 
-Previous![<](./drafting-deploying) Next![>](./monitor)
+Previous! [<](./drafting-deploying) Next! [>](./monitor)
