@@ -116,4 +116,4 @@ function khronProcessAlert(bytes32 _requestID) override internal returns (bool){
 # The Khron Response Function:
 - This function is not open to be modified.
 
-Previous! [<](./) Next! [>](./register)
+[<](./) Previous! - Next! [>](./register)

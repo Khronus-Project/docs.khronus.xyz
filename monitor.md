@@ -6,4 +6,4 @@ The Served Alerts table purpose of to allow you to track your contracts' served 
 
 ![Server Alerts](./images/ServedAlerts.png)
 
-Previous! [<](./register)
+[<](./register) Previous! 
