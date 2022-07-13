@@ -38,7 +38,7 @@ source networks:
 
 ## Client Contract Functions:
 
-The client contract base has the following two functions:
+The client contract base contains the following functions:
 
 ```
 function clientRequestKhronTab(uint256 _timestamp, uint256 _iterations, uint256 _step) internal returns (bytes32){
@@ -49,16 +49,23 @@ function clientRequestKhronTab(uint256 _timestamp, uint256 _iterations, uint256 
 
 function khronProcessAlert(bytes32 _requestID) internal virtual returns (bool) {
 }
+
+function khronResponse(bytes32 _requestID) external returns (bool){
+    require (msg.sender == khronusCoordinator);
+    khronProcessAlert(_requestID);
+    return true;
+}
 ```
 
 ### Request KhronTab Function:
+
 - the Request Khron Tab Function takes three parameters, the timestamp when the alert should trigger, the number of iterations of the alert, and the step of the alert. 
 
     - The timestamp (_timestamp) should be a timestamp in the [unix standard](https://en.wikipedia.org/wiki/Unix_time) that happens in the future.
     - The number of iterations is how many alerts should be triggered, currently Khronus supports only 1 iterations alerts.
     - The step or timeframe between each iteration, currently at beta this should be set to 0.
     - This function only registers the alert in the network, it doesn't define what happens upon expiration.
-    - The function returns the AlertId as a bytes32 hexadecimal value.
+    - The function returns the RequestId as a bytes32 hexadecimal value.
 
 - Example: The following function creates a Khronus powered escrow that expires in the selected timestamp.
 
@@ -82,3 +89,29 @@ function openEscrow(address _beneficiary, uint256 _expiryTimestamp, address _age
 }
 ```
 
+### The Khron Process Alert Function
+
+- This function is originally empty in the contract base, you need to override it with the logic you want to implement upon the expiration of the alerts. This logic of this function is up to you, but the function is internal it can only be triggered by the khronResponse external function, which only can be called by the Khronus Protocol.
+
+- Example: The following function is the counterpart to the create alert function above, this function actually expires the escrow and transfers the escrow funds according to the escrow rules. 
+
+```
+function khronProcessAlert(bytes32 _requestID) override internal returns (bool){
+    bytes32 _escrowID = tabRegistry[_requestID];
+    if (escrowRegistry[_escrowID].condition){
+        payable(escrowRegistry[_escrowID].beneficiary).transfer(escrowRegistry[_escrowID].balance);
+        escrowRegistry[_escrowID].balance = 0;
+        escrowRegistry[_escrowID].status = EscrowStatus.Expired;
+    }
+    else{
+        payable(escrowRegistry[_escrowID].depositor).transfer(escrowRegistry[_escrowID].balance);
+        escrowRegistry[_escrowID].balance = 0;
+        escrowRegistry[_escrowID].status = EscrowStatus.Expired;
+    }
+    emit EscrowExpired(_escrowID, block.timestamp, escrowRegistry[_escrowID].condition);
+    return true;
+}
+```
+
+# The Khron Response Function:
+- This function is not open to be modified.
