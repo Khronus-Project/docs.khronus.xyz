@@ -1,2 +1,5 @@
+theme: jekyll-theme-slate
+plugins:
+- jekyll-remote-theme
 title: Khronus Protocol
 description: https://khronus-project.github.io/documents/drafting-deploying
