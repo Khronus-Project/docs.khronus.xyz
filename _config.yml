@@ -1,3 +1,5 @@
-theme: jekyll-theme-minimal
+theme: pages-themes/midnight@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
 title: Khronus Protocol - Alerts in the Blockchain
 description: The Khronus project was born from the need of a reliable, easy to use, decentralized set of tools for the management of time in smart contracts, specially the serving of time related alerts.
