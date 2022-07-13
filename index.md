@@ -1,6 +1,14 @@
 # Welcome to the Khronus Protocol 
 
-# What is the Khronus Protocol
+* [What is the Khronus Protocol](#what-is-the-khronus-protocol)
+* [Khronus Alpha](#the-alpha-version)
+* Using the Khronus Alpha
+    * Drafting and Deploying a Khronus Client Contract 
+    * Register a Client Contract
+    * Monitor your alerts
+    * Report issues
+
+## What is the Khronus Protocol
 
 It is very common for computer systems to execute actions not only as a response to user interactions, but also upon specific events. One of the events that very often triggers actions in computer systems is the passage of time. 
 Virtually all subscriptions, the flesh and blood of Software as a Service (SaaS) companies, run thanks to the very reliable Linux Job Scheduler, cronjobs.
@@ -21,7 +29,7 @@ The Khronus Protocol is available in its Alpha Testnet Version in the Mumbai tes
 
 The purpose of the Alpha version is to refine the Khronus Protocol and interact with the community in order to establish what features are needed the most and prioritize development accordingly.
 
-## What is available
+### What is available
 
 During the Public Alpha the Krhonus Protocol is open to provide client contracts in the Polygon Mumbai testnet with alerts. Use cases for these types of services are contracts such as, parametric insurance, escrow agreements, lending, etc. 
 
