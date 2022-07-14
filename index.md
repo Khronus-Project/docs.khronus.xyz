@@ -3,10 +3,10 @@
 * [What is the Khronus Protocol](#what-is-the-khronus-protocol)
 * [Khronus Alpha](#the-alpha-version)
 * Using the Khronus Alpha
-    * Drafting and Deploying a Khronus Client Contract 
-    * Register a Client Contract
-    * Monitor your alerts
-    * Report issues
+    * [Drafting and Deploying a Khronus Client Contract](./drafting-deploying) 
+    * [Register a Client Contract](./register)
+    * [Monitor your alerts](./monitor)
+    * [Report issues](./report)
 
 ## What is the Khronus Protocol
 

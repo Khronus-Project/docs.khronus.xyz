@@ -1,0 +1,3 @@
+# Terms
+- Khronus public alpha is an experimental alpha test version. It is not meant for business critical purposes or any production application. By using you are agreeing to use it as it is on your own risk.
+- For conveniencie the front-end is built by gathering data about your Polygon Public address and Registered Contracts. This is public transaction and event data already available in the Blockchain.
