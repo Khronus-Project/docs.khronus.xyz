@@ -1,3 +1,4 @@
 # Terms
 - Khronus public alpha is an experimental alpha test version. It is not meant for business critical purposes or any production application. By using you are agreeing to use it as it is on your own risk.
 - For conveniencie the front-end is built by gathering data about your Polygon Public address and Registered Contracts. This is public transaction and event data already available in the Blockchain.
+- User Interfaces of blockchain projects had been hacked or exploited in the past. As an experimental project in its alpha version the khronus protocol dapp is not hardened so it is recommended that it is used with testing accounts that don't hold any real funds. By using the protocol you acknowledge that the developers of the Khronus protocol don't make responsibility related to exploits or hacks.
